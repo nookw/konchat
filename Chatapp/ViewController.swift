@@ -7,17 +7,34 @@
 //
 
 import UIKit
+import MaterialComponents.MaterialButtons
+import MaterialComponents.MaterialNavigationBar
+import MaterialComponents.MaterialBottomNavigation
 
 class ViewController: UIViewController {
-
+    
+    
+    
+    @IBOutlet weak var start: MDCButtonBarButton!
+    
+    
+    @IBAction func startAction(_ sender: Any) {
+        self.performSegue(withIdentifier: "tableseg", sender: nil)
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        
+       
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
     }
 
 
